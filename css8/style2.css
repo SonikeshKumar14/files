@@ -1,0 +1,12 @@
+.relative {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(14, 14, 15);
+    background-color: burlywood;
+    /* position: relative; apni purani postion se */
+    /* position: absolute; window ke top postion se yani viewport screen se */
+    /* position: fixed; scroll hone par bhi nahi hatta */
+    position: sticky;
+    top: 30px;
+    left: 30px;
+}

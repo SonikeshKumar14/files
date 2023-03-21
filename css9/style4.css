@@ -1,0 +1,80 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem;
+    background: #000;
+  }
+  
+  .navbar-items {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 1rem;
+    justify-self: center;
+  }
+  
+  .navbar-items a {
+    text-decoration: none;
+    color: #fff
+  }
+  
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: red;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  
+    .navbar-items {
+      display: none;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-toggle.active span:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .navbar-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-toggle.active span:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  
+    .navbar-toggle:hover span {
+      transform: scale(1.1);
+    }
+  
+    .navbar-toggle.active:hover span {
+      transform: none;
+    }
+  
+    .navbar-toggle.active ~ .navbar-items {
+      display: grid;
+    }
+  }
+  
