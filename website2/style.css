@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "GT America Standard", sans-serif;
+}
+
+.navbar {
+    width: 100vw;
+    height: 88px;
+    background-color: black;
+    margin-top: 0;
+}
+.navbar input[type='checkbox'] ,
+.navbar .hamburger-lines
+{
+    display: none;
+}
+
+
+
+.navbar-container {
+    max-width: 1289px;
+    height: 88px;
+    background: #0000;
+    display: flex;
+    justify-content: space-between;
+    margin: 19px 64px; 
+}
+
+.left-items {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-items {
+    order: 2;
+    justify-self: flex-end;
+    align-items: center;
+}
+
+.right-items ul {
+    display: flex;
+}
+
+.navbar-container .left-items img {
+    width: 130px;
+    height: 130px;
+}
+
+.left-items h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.right-items .menu-items ul {
+    list-style: none;
+}
+
+.right-items .menu-items a {
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: normal;
+    padding: 6px 22px;
+    border: 1px solid #fff;
+}
